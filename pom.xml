@@ -17,9 +17,6 @@
                         <arg>--add-opens=java.base/java.lang=ALL-UNNAMED</arg>
                         <arg>--add-opens=java.base/java.nio=ALL-UNNAMED</arg>
                         <arg>--add-opens=java.base/java.util=ALL-UNNAMED</arg>
-                        <arg>--add-opens=javafx.base/javafx.collections=ALL-UNNAMED</arg>
-                        <arg>--add-opens=javafx.base/javafx.event=ALL-UNNAMED</arg>
-                        <arg>--add-opens=javafx.base/javafx.beans=ALL-UNNAMED</arg>
                     </compilerArgs>
                 </configuration>
             </plugin>
