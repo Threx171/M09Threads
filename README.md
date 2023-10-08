@@ -6,30 +6,16 @@ En aquest projecte un exemple d'aplicació adaptadiva amb .fxml
 
 ### Compilació i funcionament ###
 
-A Linux i OSX:
-
-```
-./compile.sh
-```
-
-A Windows Powershell:
-
-```
-.\compile.bat
+Cal el 'Maven' per compilar el projecte
+```bash
+mvn clean
+mvn compile
+mvn exec:java -Dexec.mainClass="com.project.Main" -q
 ```
 
-Or, from Visual Studio Code:
+Per executar el projecte a Windows cal
+.\run.ps1 com.project.Main
 
-```
-"Terminal > Run task > Compile Project"
-
-```
-
-### Llicència ###
-
-Tenir en compte les llicències JavaFX que hi ha en cada una de les respectives carpetes
-
-[JavaFX](https://openjdk.org/projects/openjfx/)
-
-Codi original de [Afsal Villan](https://github.com/afsalashyana/JavaFX-Tutorial-Codes/tree/master/JavaFX%20Scene%20Transition)
+Per executar el projecte a Linux/macOS cal
+./run.sh com.project.Main
 
