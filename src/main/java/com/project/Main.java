@@ -47,7 +47,7 @@ public class Main extends Application {
 
         // Add icon only if not Mac
         if (!System.getProperty("os.name").contains("Mac")) {
-            Image icon = new Image("file:assets/icons/icon.png");
+            Image icon = new Image("file:/icons/icon.png");
             stage.getIcons().add(icon);
         }
     }
