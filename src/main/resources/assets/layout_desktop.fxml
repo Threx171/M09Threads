@@ -1,24 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.VBox?>
-<?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.project.ControllerDesktop">
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.project.ControllerDesktop">
    <children>
-      <HBox maxHeight="100.0" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0">
-         <children>
-            <VBox alignment="BOTTOM_LEFT" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS" />
-            <VBox alignment="BOTTOM_CENTER" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS" />
-            <VBox alignment="BOTTOM_RIGHT" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS" />
-         </children>
-      </HBox>
-      <Text layoutX="14.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Desktop view" wrappingWidth="370.13671875" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0">
+      <Text layoutX="14.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vista 0" wrappingWidth="370.13671875" AnchorPane.leftAnchor="350.0" AnchorPane.rightAnchor="159.86328125" AnchorPane.topAnchor="14.0">
          <font>
             <Font name="Lato Black" size="55.0" />
          </font>
       </Text>
+      <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="20.0" prefWidth="0.0" text="Vista 1" AnchorPane.bottomAnchor="520.0" AnchorPane.leftAnchor="600.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="40.0" />
+      <Line endX="888.8585205078125" endY="100.22640991210938" startX="1.425113259756472E-5" startY="100.22640991210938" />
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <HBox minWidth="-Infinity" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <VBox prefHeight="200.0" prefWidth="100.0" spacing="15.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Text fx:id="txtTask1" strokeType="OUTSIDE" strokeWidth="0.0" text="Tasca 1,">
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                              </Text>
+                              <ProgressBar fx:id="progressbar1" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="600.0" progress="0.0">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin></ProgressBar>
+                           </children>
+                           <padding>
+                              <Insets bottom="60.0" left="30.0" top="20.0" />
+                           </padding>
+                        </VBox>
+                        <Button fx:id="btnTask1" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" text="Iniciar" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets right="40.0" top="50.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="10.0" minWidth="-Infinity" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <VBox prefHeight="200.0" prefWidth="100.0" spacing="15.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Text fx:id="txtTask2" strokeType="OUTSIDE" strokeWidth="0.0" text="Tasca 1,">
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                              </Text>
+                              <ProgressBar fx:id="progressbar2" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="600.0" progress="0.0">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </ProgressBar>
+                           </children>
+                           <padding>
+                              <Insets bottom="60.0" left="30.0" top="20.0" />
+                           </padding>
+                        </VBox>
+                        <Button fx:id="btnTask2" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" text="Iniciar" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets right="40.0" top="50.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="10.0" minWidth="-Infinity" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <VBox prefHeight="200.0" prefWidth="100.0" spacing="15.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Text fx:id="txtTask3" strokeType="OUTSIDE" strokeWidth="0.0" text="Tasca 1,">
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                              </Text>
+                              <ProgressBar fx:id="progressbar3" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="600.0" progress="0.0">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </ProgressBar>
+                           </children>
+                           <padding>
+                              <Insets bottom="60.0" left="30.0" top="20.0" />
+                           </padding>
+                        </VBox>
+                        <Button fx:id="btnTask3" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" text="Iniciar" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets right="40.0" top="50.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
    </children>
 </AnchorPane>
