@@ -27,7 +27,7 @@
                      <children>
                         <VBox prefHeight="200.0" prefWidth="100.0" spacing="15.0" HBox.hgrow="ALWAYS">
                            <children>
-                              <Text fx:id="txtTask1" strokeType="OUTSIDE" strokeWidth="0.0" text="Tasca 1,">
+                              <Text fx:id="txtTask1" strokeType="OUTSIDE" strokeWidth="0.0" text="Tasca 1">
                                  <font>
                                     <Font size="19.0" />
                                  </font>
@@ -55,7 +55,7 @@
                      <children>
                         <VBox prefHeight="200.0" prefWidth="100.0" spacing="15.0" HBox.hgrow="ALWAYS">
                            <children>
-                              <Text fx:id="txtTask2" strokeType="OUTSIDE" strokeWidth="0.0" text="Tasca 1,">
+                              <Text fx:id="txtTask2" strokeType="OUTSIDE" strokeWidth="0.0" text="Tasca 2">
                                  <font>
                                     <Font size="19.0" />
                                  </font>
@@ -81,7 +81,7 @@
                      <children>
                         <VBox prefHeight="200.0" prefWidth="100.0" spacing="15.0" HBox.hgrow="ALWAYS">
                            <children>
-                              <Text fx:id="txtTask3" strokeType="OUTSIDE" strokeWidth="0.0" text="Tasca 1,">
+                              <Text fx:id="txtTask3" strokeType="OUTSIDE" strokeWidth="0.0" text="Tasca 3">
                                  <font>
                                     <Font size="19.0" />
                                  </font>
