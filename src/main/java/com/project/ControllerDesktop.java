@@ -65,7 +65,7 @@ public class ControllerDesktop {
         }
     }
 
-    private long getSleepDuration(int taskNumber) {
+    public long getSleepDuration(int taskNumber) {
         if (taskNumber == 1) {
             return 1000;
         } else if (taskNumber == 2) {
@@ -75,7 +75,7 @@ public class ControllerDesktop {
         }
     }
 
-    private int getIncrement(int taskNumber) {
+    public int getIncrement(int taskNumber) {
         if (taskNumber == 1) {
             return 1;
         } else if (taskNumber == 2) {
