@@ -17,7 +17,7 @@
             <Font name="Lato Black" size="55.0" />
          </font>
       </Text>
-      <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="20.0" prefWidth="0.0" text="Vista 1" AnchorPane.bottomAnchor="520.0" AnchorPane.leftAnchor="600.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="40.0" />
+      <Button fx:id="btnView1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="20.0" prefWidth="0.0" text="Vista 1" AnchorPane.bottomAnchor="520.0" AnchorPane.leftAnchor="600.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="40.0" />
       <Line endX="888.8585205078125" endY="100.22640991210938" startX="1.425113259756472E-5" startY="100.22640991210938" />
       <AnchorPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
          <children>

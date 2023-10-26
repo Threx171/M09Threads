@@ -1,10 +1,14 @@
 package com.project;
 
 import javafx.application.Platform;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ProgressBar;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.text.Text;
+import jdk.jshell.execution.Util;
 
 import java.util.Random;
 import java.util.concurrent.ExecutorService;
@@ -20,7 +24,7 @@ public class ControllerDesktop {
     private Text txtTask1, txtTask2, txtTask3;
 
     @FXML
-    private Button btnTask1, btnTask2, btnTask3;
+    private Button btnTask1, btnTask2, btnTask3, btnView1;
 
     private Random random = new Random();
     private AtomicInteger value1 = new AtomicInteger(0);
@@ -36,6 +40,14 @@ public class ControllerDesktop {
         btnTask1.setOnAction(e -> runTask(1, value1, run1, progressbar1, txtTask1, btnTask1));
         btnTask2.setOnAction(e -> runTask(2, value2, run2, progressbar2, txtTask2, btnTask2));
         btnTask3.setOnAction(e -> runTask(3, value3, run3, progressbar3, txtTask3, btnTask3));
+        btnView1.setOnAction((EventHandler<ActionEvent>) new EventHandler<ActionEvent>() {
+
+            @Override
+            public void handle(ActionEvent event) {
+                UtilsViews.setViewAnimating("Desktop2");
+            }
+
+        });
     }
 
     public void runTask(int taskNumber, AtomicInteger currentValue, AtomicBoolean isRunning,
